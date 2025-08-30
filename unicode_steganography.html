@@ -9,40 +9,37 @@
 -->
 <head>
 <meta charset="utf-8"/>
-<title>Unicode Steganography with Zero-Width Characters</title>
+<title>Stéganographie Unicode avec des caractères de largeur nulle</title>
 </head>
 <body>
-<h1>Unicode Steganography with Zero-Width Characters</h1>
+<h1>Stéganographie Unicode avec des caractères de largeur nulle</h1>
 <div>
-This is plain text steganography with zero-width characters of Unicode.<br />
-Zero-width characters is inserted within the words.<br />
+Il s'agit d'une stéganographie en texte clair utilisant des caractères Unicode de largeur nulle.<br />
+Des caractères de largeur nulle sont insérés dans les mots.<br />
 </div>
 <hr style="width: 100%;" />
-<h2>Text in Text Steganography Sample</h2>
+<h2>Exemple de stéganographie dans un texte</h2>
 <table style="width: 100%;">
 <tr>
 <td style="width: 45%; vertical-align: top;">
 <div>
-Original Text: <button id="input_clear_text">Clear</button> <span id="input_length_text"></span>
-<textarea id="input_text" style="width: 100%; height: 150px;">The quick brown fox jumps over the lazy dog
-1234567890.:,;(*!?')
-いろはにほへと ちりぬるを
-色は匂へど 散りぬるを</textarea>
+Texte original : <button id="input_clear_text">Clear</button> <span id="input_length_text"></span>
+<textarea id="input_text" style="width: 100%; height: 150px;"></textarea>
 </div>
 <div>
-Hidden Text: <button id="hidden_clear_text">Clear</button> <span id="hidden_length_text"></span>
-<textarea id="hidden_text" style="width: 100%; height: 150px;">Where am I?</textarea>
+Texte caché : <span id="hidden_length_text"></span>
+<textarea id="hidden_text" style="width: 100%; height: 150px;"></textarea>
 </div>
 </td>
 <td style="width: 10%; text-align: center;">
-<button id="encode_text">Encode &raquo;</button><br /><br />
-<button id="decode_text">&laquo; Decode</button>
+<button id="encode_text">Crypter &raquo;</button><br /><br />
+<button id="decode_text">&laquo; Décrypter</button>
 </td>
 <td style="width: 45%; vertical-align: top;">
 <div>
-Steganography Text: <button id="output_clear_text">Clear</button> <span id="output_length_text"></span>
+Texte stenographié : <span id="output_length_text"></span>
 <textarea id="output_text" style="width: 100%; height: 300px;"></textarea><br />
-<a id="download_stego_text_text" download="stego_text.txt">Download Stego Text as File</a>
+<a id="download_stego_text_text" download="stego_text.txt">Télécharger le texte stego en tant que fichier</a>
 </div>
 </td>
 </tr>
