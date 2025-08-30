@@ -45,39 +45,6 @@ Texte stenographié : <span id="output_length_text"></span>
 </tr>
 </table>
 <hr style="width: 100%;" />
-<h2>Library Usage</h2>
-<h3><code>unicodeSteganographer.encodeText(String, String)</code></h3>
-<div>
-<code>encodeSteganography</code> returns a stego String. The 1st argument is a String to be embedded, the 2nd argument is a String to be hidden.
-</div>
-<h3><code>unicodeSteganographer.encodeBinary(String, Uint8Array)</code></h3>
-<div>
-<code>encodeSteganography</code> returns a stego String which is embedded steganography of Uint8Array.
-</div>
-<h3><code>unicodeSteganographer.decodeText(String)</code></h3>
-<div>
-<code>decodeSteganography</code> returns a JavaScript Object: { originalText: original text (String), hiddenText: hidden text (String)}.
-</div>
-<h3><code>unicodeSteganographer.decodeBinary(String)</code></h3>
-<div>
-<code>decodeSteganography</code> returns a JavaScript Object: { originalText: original text (String), hiddenData: hidden data (Uint8Array)}.
-</div>
-<h3><code>unicodeSteganographer.setUseChars(String)</code></h3>
-<div>
-<code>setUseChars</code> sets the characters for steganography as a String.<br />
-Default characters used for steganography are U+200C, U+200D, U+202C, and U+FEFF.<br />
-U+200B(ZERO WIDTH SPACE) is deleted in Gmail when sending a mail from browsers.<br />
-<br />
-<h2>Supported Browsers</h2>
-<ul>
-<li>Chromium 45 (Ubuntu 14.04 LTS)</li>
-<li>Firefox 42 (Ubuntu 14.04 LTS)</li>
-<li>Edge (Windows 10)</li>
-<li>Internet Explorer 11 (Windows 10) * Text in Text Only, Download as File doesn't work</li>
-<li>Safari (iOS 9.1)</li>
-<li>Chrome (Android 4.2)</li>
-</ul>
-</div>
 </body>
 <script type="text/javascript" src="unicode_steganography.js"></script>
 <script>
